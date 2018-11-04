@@ -1,0 +1,35 @@
+Q1.
+	(1) *p3 = S
+	(2,3) *p3 = T, p3 = 6940
+	(4,5) *p1 = S, p1 = 6940
+
+
+
+Q2.
+	D. *p = 75;
+
+
+Q3.
+	The pointer is defined to point at the address of a 'double' data type variable, but &c is address of a variable 'c' which is a 'char' data type.
+
+
+Q4.
+   char blocks[3] = {'A','B','C'};
+   char *ptr = &blocks[0];	// 4434
+   char temp;
+
+   temp = blocks[0];		// A
+   temp = *(blocks + 2);	// 4436
+   temp = *(ptr + 1);		// 4435
+   temp = *ptr;			// A
+
+   ptr = blocks + 1;		// 4435
+   temp = *ptr;			// B
+   temp = *(ptr + 1);		// C
+
+   ptr = blocks;		// 4434
+   temp = *++ptr;		// B
+   temp = ++*ptr;		// C
+   temp = *ptr++;		// C
+   temp = *ptr;			// C
+
